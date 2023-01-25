@@ -1,0 +1,24 @@
+<div class="login-conatainer">
+    <img class="film" src="../../../assets/images/img1.png" alt="">
+    <div class="logo">What the ?</div>
+    <div class="desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore possimus praesentium similique officia?
+        Veritatis minima perspiciatis, temporibus dolore sunt, mollitia exercitationem nulla suscipit labore maiores
+        quasi inventore obcaecati maxime illum.
+    </div>
+    <div class="login-form">
+
+        <div class="form-group">
+            <label for="name">UserName</label>
+            <input name='name' type="text id" class="form-control" [(ngModel)]='username'>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input name='password' type="password" [(ngModel)]='password'>
+        </div>
+        <div class="btn-container">
+            <div class="error">{{errorMessage}}</div>
+            <button class="btn btn-primary" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
